@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Rye&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ html, body {
 .container-header {
     margin: 10px 80px 20px;
     background-color: #f1ebe8;
+    opacity: 0.9;
     display: flex;
     justify-content: space-around;
     padding: 15px;
@@ -16,7 +19,7 @@ html, body {
 
 #imagem-rute-lisa {
     height: 250px;
-
+    transform: rotate(25deg);
 }
 
 #imagem-rute-lisa:hover {
@@ -26,8 +29,24 @@ html, body {
 
 #descricao-do-quadro-imagem {
     font-size: 2rem;
-    max-width: 30%;
-    color: #888899;
+    font-family: 'Frijole', cursive;
+    font-family: 'Rye', cursive;
+    max-width: 40%;
+    color: rgb(136, 49, 49);
+}
+#botaoParaMudarPosicaoDaFoto {
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+#botaoParaMudarPosicaoDaFoto:hover {
+    background-color:rgb(95 54 24);
+}
+ /*classe pra evento do botão de mudar posição da foto*/ 
+.deixar-foto-reta {
+    transform: rotate(0) !important;
 }
 
 footer {
