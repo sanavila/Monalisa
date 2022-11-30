@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url(./img/madeira.webp);
+    min-height: 100%;
+}
+
+.container-header {
+    margin: 10px 80px 20px;
+    background-color: #f1ebe8;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#imagem-rute-lisa {
+    height: 250px;
+
+}
+
+#imagem-rute-lisa:hover {
+    animation: tremer .2s;
+    animation-iteration-count: 4;
+}
+
+#descricao-do-quadro-imagem {
+    font-size: 2rem;
+    max-width: 30%;
+    color: #888899;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.container-de-icones {
+    margin: auto;
+    display: flex;
+    gap: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+#icons {
+    font-size: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin: 40%;
+    color: #fff;
+}
+
+@keyframes tremer {
+    0% {transform: rotate(-25deg) translate(0px, 0px);}
+    25% {transform: rotate(-25deg) translate(7px, 7px);}
+    50% {transform: rotate(-25deg) translate(0px, 0px);}
+    75% {transform: rotate(-25deg) translate(-7px, -7px);}
+    100% {transform: rotate(-25deg) translate(0px, 0px);}
+}
